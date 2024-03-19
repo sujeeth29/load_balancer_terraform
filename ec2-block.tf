@@ -116,7 +116,7 @@ resource "aws_instance" "pri-ec2-1b" {
   subnet_id       = aws_subnet.pri_east_1b.id
   security_groups = [aws_security_group.private-sg.id]
   tags = {
-    Name = var.instance_name_public_AZ-1b
+    Name = var.instance_name_private_AZ-1b
   }
 }
 
